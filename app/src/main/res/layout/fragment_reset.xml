@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_reset"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+
+    android:orientation="vertical"
+    tools:context="com.example.mahmoud.datashow.Fragments.ResetFragment"
+    >
+
+    <TextView
+        android:text="Forgot your Password ?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/forgot_txt"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center_vertical|center_horizontal|center"
+        android:gravity="center"
+        android:layout_marginTop="80dp" />
+
+    <TextView
+        android:text="Type your registered email below to sent you password instruction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/email_edt"
+        android:maxLines="1"
+        android:hint="Email"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:text="reset password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reset_btn"
+        android:layout_marginTop="80dp" />
+</LinearLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/fragment_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+
+
+        tools:context="com.example.mahmoud.datashow.Fragments.LoginFragment"
+        >
+
+        <TextView
+            android:text="Sign in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="67dp"
+            android:id="@+id/textView"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/white"
+            android:gravity="center" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="37dp"
+            android:id="@+id/login_email"
+            android:maxLines="1"
+            android:hint="Email"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:id="@+id/password"
+            android:hint="password"
+            android:maxLines="1"
+            android:layout_below="@+id/login_email"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:id="@+id/forgot_btn"
+        android:text="Forgot your Password ?"
+        android:textAllCaps="false" />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_below="@+id/forgot_btn"
+            android:id="@+id/checkBox"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1"
+            android:layout_marginTop="15dp"
+            android:text="Remember me" />
+
+        <TextView
+            android:text="Enter your email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_alignLeft="@+id/forgot_btn"
+            android:layout_alignStart="@+id/forgot_btn"
+            android:layout_marginTop="19dp"
+            android:id="@+id/login_email_note"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:textColor="#ffcc0000" />
+
+        <TextView
+            android:text="Enter your Password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_password_note"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:textColor="#ffcc0000"
+            android:layout_below="@+id/login_email"
+            android:layout_alignLeft="@+id/login_email_note"
+            android:layout_alignStart="@+id/login_email_note" />
+
+        <Button
+            android:text="sign in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_button"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/forgot_btn"
+            android:layout_toEndOf="@+id/forgot_btn" />
+
+        <Button
+            android:text="Sign Up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/signup_button"
+
+            android:textColor="@android:color/white"
+            android:layout_alignParentBottom="false"
+            android:layout_centerHorizontal="false"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+</ScrollView>

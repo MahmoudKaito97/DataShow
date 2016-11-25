@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DataShow</string>
+
+    <array name="job_title">
+        <item>Select job title</item>
+        <item>Manager</item>
+        <item>Employee</item>
+    </array>
+</resources>
